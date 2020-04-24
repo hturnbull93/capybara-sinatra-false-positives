@@ -2,7 +2,9 @@ require 'sinatra/base'
 
 class Echo < Sinatra::Base
 
-  set :show_exceptions, false
+  # Uncomment to use plain 500 errors
+  # set :show_exceptions, false
+
   get '/' do
     erb :index
   end

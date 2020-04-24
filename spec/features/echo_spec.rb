@@ -7,12 +7,22 @@ feature 'Echo' do
     expect(page).to have_content 'Hello'
   end
 
-  scenario 'Correct Failure: entering Hello echos Hello' do
+  scenario 'Correct Failure: Expecting not to have Sinatra' do
     visit '/'
     expect(page).to have_content 'Echo Generator'
     fill_in('echo', with: "Hello")
     click_on 'Shout'
     expect(page).to have_content 'Hello'
     expect(page).to_not have_content 'Sinatra'
+  end
+
+  scenario 'Correct Failure: Specific element contains Hello' do
+    visit '/'
+    expect(page).to have_content 'Echo Generator'
+    fill_in('echo', with: "Hello")
+    click_on 'Shout'
+    within('#result') {
+      expect(page).to have_content 'Hello'
+    }
   end
 end

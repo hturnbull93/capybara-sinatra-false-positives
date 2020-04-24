@@ -6,7 +6,7 @@ A simple web app to illustrate Capybara false positives arising from Sinatra's 4
 
 - Clone this repo
 - Have Ruby installed
-- Run 'bundle' in your terminal
+- Run `bundle` in your terminal
 - Run `rspec` in your terminal to see the tests
 - Run `rackup` in your terminal to host a local development server
 - Visit <http://localhost:9292> to see the errors for yourself

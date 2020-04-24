@@ -1,6 +1,6 @@
 # False Positive Sinatra and Capybara App
 
-A simple web app to illustrate false positives arising from Sinatra's 404 and 500 error pages for this medium blog.
+A simple web app to illustrate Capybara false positives arising from Sinatra's 404 and 500 error pages for this medium blog.
 
 ## Instructions
 
